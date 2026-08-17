@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Do Khanh Thuan - Portfolio & CV</title>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+
+<body>
+
+<div class="controls">
+  <button id="theme-toggle" class="btn" title="Toggle Dark/Light Mode">
+    <i id="theme-icon" class="fa-solid fa-moon"></i>
+  </button>
+  <button onclick="window.print()" class="btn" title="Print to PDF">
+    <i class="fa-solid fa-print"></i>
+  </button>
+</div>
+
+<div class="cv-card">
+
+  <!-- ===== HEADER ===== -->
+
+  <header class="cv-header">
+
+    <div class="header-left">
+      <div class="profile-img">
+        <img src="assets/images/avaata2.png"
+             alt="avatar"
+             onerror="this.src='https://ui-avatars.com/api/?background=0f766e&color=fff&name=DK+Thuan'">
+      </div>
+    </div>
+
+    <div class="header-right">
+      <h1>DO KHANH THUAN</h1>
+      <h3>SOFTWARE ENGINEER</h3>
+      <p class="summary">
+        Seeking a Fresher Full-Stack Developer position where I can apply my hands-on experience with Java, Spring Boot, ReactJS, and relational databases. I aim to strengthen my expertise in both frontend and backend engineering, system design, and building responsive user interfaces while contributing effectively to a collaborative development team.
+      </p>
+    </div>
+
+    <!-- Download CV Button -->
+    <a href="assets/cv.pdf" download="Do_Khanh_Thuan_CV.pdf" class="btn btn-download-cv">
+      <i class="fa-solid fa-download"></i> Download CV
+    </a>
+
+  </header>
+
+  <!-- ===== MAIN LAYOUT ===== -->
+
+  <div class="cv-layout">
+
+    <!-- ===== LEFT PANEL ===== -->
+
+   <aside class="left-panel">
+
+      <!-- CONTACT INFO -->
+      <div class="section">
+        <h2>Contact</h2>
+        <div class="info-item">
+          <i class="fa-solid fa-phone"></i>
+          <span>(+84) 33 340 1545</span>
+        </div>
+        <div class="info-item">
+          <i class="fa-regular fa-envelope"></i>
+          <span>thuan.dokhan04@gmail.com</span>
+        </div>
+        <div class="info-item">
+          <i class="fa-brands fa-linkedin"></i>
+          <a href="https://www.linkedin.com/in/thuan-do-aa1b71396/" target="_blank">linkedin.com/in/thuan-do</a>
+        </div>
+        <div class="info-item">
+          <i class="fa-brands fa-github"></i>
+          <a href="https://github.com/KhanhThuanSimple" target="_blank">github.com/KhanhThuanSimple</a>
+        </div>
+        <div class="info-item">
+          <i class="fa-solid fa-location-dot"></i>
+          <span>Thu Duc City, HCMC</span>
+        </div>
+      </div>
+
+      <!-- TECHNICAL SKILLS -->
+      <div class="section">
+        <h2>TECHNICAL SKILLS</h2>
+        
+        <div class="skill-group">
+          <h4>Languages</h4>
+          <p>Java (Core, Collections, Streams, OOP), JavaScript (ES6+), SQL, HTML5/CSS3</p>
+        </div>
+        <div class="skill-group">
+          <h4>Backend</h4>
+          <p>Spring Boot 3, Spring Security, Spring Data JPA, Hibernate, RESTful APIs, JWT, WebSocket</p>
+        </div>
+        <div class="skill-group">
+          <h4>Frontend</h4>
+          <p>ReactJS, Redux Toolkit, Tailwind CSS, Bootstrap</p>
+        </div>
+        <div class="skill-group">
+          <h4>Databases</h4>
+          <p>PostgreSQL, MySQL (Indexing, Normalization, Query Optimization)</p>
+        </div>
+        <div class="skill-group">
+          <h4>DevOps & Tools</h4>
+          <p>Docker, Git/GitHub, Maven, Postman, Linux basics</p>
+        </div>
+        <div class="skill-group">
+          <h4>AI & Productivity</h4>
+          <p>GitHub Copilot, ChatGPT</p>
+        </div>
+      </div>
+
+      <!-- CERTIFICATIONS -->
+      <div class="section">
+        <h2>Certifications</h2>
+        <div class="skill-group">
+          <p>• Oracle Academy – Java Fundamentals</p>
+          <p>• Oracle Academy – Database Design & SQL</p>
+          <p>• Spring Boot 3 & Microservices – Udemy</p>
+        </div>
+      </div>
+
+      <!-- EDUCATION -->
+      <div class="section" style="margin-bottom: 0;">
+        <h2>Education</h2>
+        <div class="skill-group">
+          <h4>Nong Lam University</h4>
+          <p style="color: var(--primary);">B.S. in Information Technology</p>
+          <p style="font-size: 11px; color: var(--text-muted);">2022 – 2026</p>
+          <p style="margin-top: 2px;"><strong>GPA:</strong> 3.2 / 4.0</p>
+        </div>
+      </div>
+
+    </aside>
+
+    <!-- ===== RIGHT PANEL ===== -->
+
+    <section class="right-panel">
+
+      <!-- PROJECTS -->
+      <div class="section">
+        <h2>RELEVANT PROJECTS</h2>
+
+        <!-- Project Filter -->
+        <div class="filter-container">
+          <button class="filter-btn active" data-filter="all">All</button>
+          <button class="filter-btn" data-filter="backend">Backend</button>
+          <button class="filter-btn" data-filter="fullstack">Fullstack</button>
+        </div>
+
+        <!-- PROJECT 1 -->
+        <div class="project" data-tags="backend">
+          <div class="project-header">
+            <div class="project-title">ConstructX – Construction & Furniture Marketplace</div>
+            <div class="project-date">2025 – 2026</div>
+          </div>
+          <div style="font-size: 12px; margin-bottom: 2px;">
+            <strong>Role:</strong> Backend Developer | <strong>GitHub:</strong> <a href="https://github.com/KhanhThuanSimple/constructX" target="_blank" style="color: var(--primary); text-decoration: underline;">KhanhThuanSimple/constructX</a>
+          </div>
+          <div class="tech">
+            <strong>Tech Stack:</strong> Spring Boot 3, Spring Security, JWT, MySQL, WebSocket, VNPay, Cloudinary
+          </div>
+          <ul>
+            <li>Engineered backend services for a B2B2C marketplace connecting clients with contractors, supporting project bidding, contract milestones, and escrow-backed payments.</li>
+            <li>Architected a <strong>digital wallet & escrow payment system</strong> with ACID transaction management, supporting milestone disbursements, balance locking, and <strong>VNPay</strong> payment gateway.</li>
+            <li>Secured endpoints and enforced granular Role-Based Access Control (RBAC) across Customer, Contractor, and Admin using <strong>Spring Security & JWT</strong>.</li>
+            <li>Built contract automation workflows, dispute handling, and real-time bidirectional chat via <strong>WebSocket</strong>.</li>
+          </ul>
+        </div>
+
+        <!-- PROJECT 2 -->
+        <div class="project" data-tags="fullstack">
+          <div class="project-header">
+            <div class="project-title">Handmade Marketplace Platform</div>
+            <div class="project-date">2025 – Present</div>
+          </div>
+          <div style="font-size: 12px; margin-bottom: 2px;">
+            <strong>Role:</strong> Full-Stack Developer | <strong>Demo:</strong> <a href="https://cheerful-rejoicing-production-8efa.up.railway.app/" target="_blank" style="color: var(--primary); text-decoration: underline;">Demo Link</a>
+          </div>
+          <div class="tech">
+            <strong>Tech Stack:</strong> ReactJS, Spring Boot, Spring Security, JWT, PostgreSQL, Tailwind CSS, Docker
+          </div>
+          <ul>
+            <li>Developed a full-stack e-commerce platform with 20+ RESTful APIs for product catalog, checkout, and role-based authentication.</li>
+            <li>Built a responsive UI using <strong>ReactJS & Tailwind CSS</strong>, managing shopping cart and user sessions with <strong>Redux Toolkit</strong>.</li>
+            <li>Designed normalized <strong>PostgreSQL</strong> schema; optimized data access layer with <strong>Spring Data JPA</strong> and resolved N+1 query bottlenecks via DTO projections and JOIN FETCH.</li>
+          </ul>
+        </div>
+
+        <!-- PROJECT 3 -->
+        <div class="project" data-tags="fullstack">
+          <div class="project-header">
+            <div class="project-title">Roller Skate E-commerce</div>
+            <div class="project-date">2024 – 2025</div>
+          </div>
+          <div style="font-size: 12px; margin-bottom: 2px;">
+            <strong>Role:</strong> Full-Stack Developer
+          </div>
+          <div class="tech">
+            <strong>Tech Stack:</strong> Java Servlet/JSP, MySQL, JDBC, HTML5/CSS3, JavaScript, Bootstrap, VNPay
+          </div>
+          <ul>
+            <li>Developed a core Java MVC web application featuring product filtering, cart management, and <strong>VNPay</strong> payment integration.</li>
+            <li>Applied <strong>DAO & Factory Design Patterns</strong> and implemented <strong>JDBC transactions</strong> to maintain data consistency during order placement.</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- CONTACT FORM SECTION -->
+      <div class="section contact-section">
+        <h2>Send Me A Message</h2>
+        <!-- Replace YOUR_FORM_ID with actual Formspree/Web3Forms ID -->
+        <form action="https://formspree.io/f/YOUR_FORM_ID" method="POST" class="contact-form">
+          <div class="form-group">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" required placeholder="Your Name">
+          </div>
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required placeholder="your.email@example.com">
+          </div>
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="4" required placeholder="Hello! I would like to..."></textarea>
+          </div>
+          <button type="submit" class="btn btn-submit">Send Message</button>
+        </form>
+      </div>
+
+      <div class="footer">
+        <span>Java • Spring Boot • ReactJS • SQL • Docker</span>
+        <span>Available for Full-time Position</span>
+      </div>
+
+    </section>
+
+  </div>
+
+</div>
+
+<script src="assets/js/main.js"></script>
+</body>
+</html>
